@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {
+    background-color: #CAF0F8;
+}
+
+h1 {
+    font-family: 'Chewy', cursive;
+    font-size: 4rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+#board{
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+}
+
+#cellSpace{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    margin: auto;
+    width: 32rem;
+    height: 32rem;
+}
+
+#restart {
+    background-color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.cell{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid black;
+    font-size: 5rem;
+    cursor: pointer;
+}
+

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2");
+
+h1 {
+    font-family: "Baloo 2", cursive;
+    color: #726E97;
+    font-size: 3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: "Baloo 2", cursive;
+    color: #726E97;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    width: 36rem;
+    height: 36rem;
+    background-color: #726E97;
+}
+
+.cell {
+    border: 0.5px solid black;
+
+}
+
+.cell.apple {
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+.cell.snake {
+    background-color: yellowgreen;
+}
+
+button {
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+
+#controls {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+
+button.left {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+button.up {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+button.right {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+button.down {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
